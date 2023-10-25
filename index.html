@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style-main.css" />
+    <title>Fitness World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER/NAVIGATION -->
+    <div id="header-nav" class="section">
+      <header class="flex-row">
+        <h1>Fitness World</h1>
+        <!-- Icon taken from: https://ionic.io/ionicons -->
+        <ion-icon name="planet-outline"></ion-icon>
+      </header>
+      <nav id="navigation">
+        <!-- Document Fragment added here for Nav links -->
+        <div class="navigation-links"></div>
+      </nav>
+    </div>
+    <main>
+      <!-- HERO -->
+      <section id="section--hero" class="flex-row">
+        <div class="hero--left">
+          <div class="hero-text flex-column">
+            <h2 class="hero--title">Ready to test yourself to the limit?</h2>
+            <h3 class="hero--subtitle">
+              If this is you, then keep scrolling to discover what we have to
+              offer.
+            </h3>
+          </div>
+        </div>
+        <div class="hero--right">
+          <!-- Image taken from: https://www.pexels.com/photo/man-and-woman-holding-battle-ropes-1552242/ Credit to: Leon Ardho -->
+          <img
+            src="images/hero-gym.jpg"
+            class="hero-image"
+            alt="Man And Woman Holding Battle Ropes
+            "
+          />
+        </div>
+      </section>
+      <!-- GALLERY -->
+      <section id="section--gallery" class="section">
+        <h2 class="section--title">Gallery</h2>
+      </section>
+      <!-- ACCESSORIES -->
+      <section id="section--accessories" class="section">
+        <h2 class="section--title">Accessories</h2>
+        <div class="shop-container flex-row">
+          <div class="shop-card flex-column">
+            <h4 class="card-title">Gym Towel</h4>
+            <img src="images/card-1.jpg" alt="Gym towel" />
+            <span class="card--price">$30</span>
+            <div class="plus-minus-quantity flex-row">
+              <ion-icon
+                name="remove-circle"
+                class="quantity-icon minus-icon"
+              ></ion-icon>
+              <input type="number" class="card--quantity" value="0" />
+              <ion-icon
+                name="add-circle"
+                class="quantity-icon plus-icon"
+              ></ion-icon>
+            </div>
+            <p class="card--description">Your very own Fitness World towel.</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+          <div class="shop-card flex-column">
+            <h4 class="card-title">Skipping Rope</h4>
+            <img src="images/card-2.jpg" alt="skipping rope" />
+            <span class="card--price">$30</span>
+            <div class="plus-minus-quantity flex-row">
+              <ion-icon
+                name="remove-circle"
+                class="quantity-icon minus-icon"
+              ></ion-icon>
+              <input type="number" class="card--quantity" value="0" />
+              <ion-icon
+                name="add-circle"
+                class="quantity-icon plus-icon"
+              ></ion-icon>
+            </div>
+            <p class="card--description">Comes with Black, Red or Blue.</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+          <div class="shop-card flex-column">
+            <h4 class="card-title">Water Bottle</h4>
+            <img src="images/card-3.png" alt="water bottle" />
+            <span class="card--price">$15</span>
+            <div class="plus-minus-quantity flex-row">
+              <ion-icon
+                name="remove-circle"
+                class="quantity-icon minus-icon"
+              ></ion-icon>
+              <input type="number" class="card--quantity" value="0" />
+              <ion-icon
+                name="add-circle"
+                class="quantity-icon plus-icon"
+              ></ion-icon>
+            </div>
+            <p class="card--description">Comes with Black, Red or Blue.</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+      <!-- SIGN UP -->
+      <section id="section--signup" class="section">
+        <div class="sign-up--container flex-column">
+          <h2 class="section--title">Tell a Mate</h2>
+          <h3>
+            Refer a friend and for each friend that joins us, we'll take $1 off
+            your payment.
+          </h3>
+          <div class="sign-up">
+            <div class="sign-up--card flex-column">
+              <h4 class="sign-up--title">
+                Enter your friend's email and click add
+              </h4>
+              <div class="sign-up-enter-field flex-row">
+                <input type="email" class="sign-up--email" />
+                <ion-icon
+                  name="add-circle"
+                  class="quantity-icon plus-icon sign-up--plus-icon"
+                ></ion-icon>
+              </div>
+              <ul class="email-list"></ul>
+              <button class="submit-btn">TELL MY FRIENDS!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS -->
+      <section id="section--testimonials" class="section">
+        <h2 class="section--title">Testimonials</h2>
+        <div class="testimonial-photos"></div>
+        <div class="testimonials--review">
+          <div class="review-container">
+            <div id="testimonial--1" class="testimonial--review hidden">
+              Nullam non nisi mauris. Praesent blandit nisl non lacus hendrerit
+              aliquet. Ut ac ante nec felis pulvinar sollicitudin.
+            </div>
+            <div id="testimonial--2" class="testimonial--review hidden">
+              Nulla facilisi. Praesent efficitur tortor in risus viverra, a
+              semper magna tristique. In aliquam id dolor id luctus. Morbi vitae
+              eleifend enim.
+            </div>
+            <div id="testimonial--3" class="testimonial--reviev hidden">
+              Vivamus pretium, tortor sed scelerisque malesuada, dolor metus
+              elementum diam, pellentesque viverra turpis sem a purus.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="section flex-column">
+      <div class="footer-main">
+        <div class="footer-main-title">
+          <h3>Udacity Presents: Fitness World</h3>
+        </div>
+        <div class="footer-main-quote"></div>
+        <div class="footer-main-socials">
+          <!-- All icons taken from ionicons (https://ionic.io/ionicons) -->
+          <div class="social-links-footer flex-row">
+            <a class="social-link"
+              ><ion-icon
+                name="logo-twitter"
+                class="social-link--footer md hydrated"
+                role="img"
+              ></ion-icon
+            ></a>
+            <a class="social-link"
+              ><ion-icon
+                name="logo-facebook"
+                class="social-link--footer md hydrated"
+                role="img"
+              ></ion-icon
+            ></a>
+            <a class="social-link"
+              ><ion-icon
+                name="logo-instagram"
+                class="social-link--footer md hydrated"
+                role="img"
+              ></ion-icon
+            ></a>
+            <a class="social-link"
+              ><ion-icon
+                name="logo-linkedin"
+                class="social-link--footer md hydrated"
+                role="img"
+              ></ion-icon
+            ></a>
+            <a class="social-link"
+              ><ion-icon
+                name="logo-snapchat"
+                class="social-link--footer md hydrated"
+                role="img"
+              ></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Copyright ©2023 Udacity. Designed by Duc Nguyen.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

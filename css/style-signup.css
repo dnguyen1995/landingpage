@@ -1,0 +1,71 @@
+.sign-up--card {
+  padding-top: 30px;
+  gap: 8px;
+  border-radius: 2px solid #e67700;
+}
+
+.sign-up--container h4 {
+  font-size: 2rem;
+}
+.submit-btn {
+  font-size: 1.2rem;
+  border-radius: 75px;
+  padding: 20px;
+  background-color: #f59f00;
+  font-weight: bold;
+}
+
+.sign-up-enter-field {
+  width: 300px;
+}
+.sign-up--email {
+  width: 100%;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+/* MOBILE PHONES */
+@media (min-width: 400px) and (max-width: 900px) {
+  .submit-btn {
+    font-size: 1rem;
+    border-radius: 50px;
+    padding: 5px;
+  }
+
+  .sign-up-enter-field {
+    width: 200px;
+  }
+
+  .sign-up--container h4 {
+    font-size: 1.2rem;
+  }
+  .sign-up--email {
+    height: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 901px) and (max-width: 1400px) {
+  .submit-btn {
+    font-size: 1.2rem;
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+  .sign-up-enter-field {
+    width: 250px;
+  }
+
+  .sign-up--container h4 {
+    font-size: 1.2rem;
+  }
+  .sign-up--email {
+    height: 30px;
+    font-size: 1rem;
+  }
+  .sign-up--plus-icon {
+    font-size: 3rem;
+  }
+}

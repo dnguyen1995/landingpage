@@ -1,0 +1,64 @@
+/* IMPORT CSS FILES */
+@import url("style-navigation.css");
+@import url("style-hero.css");
+@import url("style-gallery.css");
+@import url("style-shop.css");
+@import url("style-signup.css");
+@import url("style-footer.css");
+@import url("style-testimonials.css");
+/* DEFAULT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 30px 30px;
+}
+
+.section--title {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.active {
+  background-color: #ffd43b;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE PHONE */
+@media (max-width: 900px) {
+  .section {
+    padding: 10px;
+  }
+
+  .section--title {
+    padding: 5px 0;
+    font-size: 2rem;
+  }
+}

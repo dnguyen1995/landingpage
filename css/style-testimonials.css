@@ -1,0 +1,57 @@
+.hidden {
+  display: none;
+}
+.testimonials--photos {
+  gap: 10rem;
+}
+.customer-photo {
+  width: 200px; /* Set your desired width */
+  height: 200px; /* Set your desired height */
+  border-radius: 50%; /* Use a value of 50% to create a circle */
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.review-container {
+  padding: 40px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+/* MEDIA QUERIES */
+/* MOBILE PHONES */
+@media (min-width: 400px) and (max-width: 900px) {
+  .testimonials--photos {
+    gap: 2rem;
+  }
+  .customer-photo {
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    border-radius: 50%; /* Use a value of 50% to create a circle */
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+
+  .review-container {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 901px) and (max-width: 1400px) {
+  .testimonials--photos {
+    gap: 5rem;
+  }
+  .customer-photo {
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    border-radius: 50%; /* Use a value of 50% to create a circle */
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+
+  .review-container {
+    padding: 20px;
+    font-size: 2rem;
+  }
+}
